@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{c159ebde-3062-4e6b-a87d-bf47aedc596e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Constants &amp; Dimensions">
+      <UniqueIdentifier>{f8826969-dbf6-49f9-96f7-c17a0fdae439}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OSQGUImm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="constants.cpp">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClCompile>
+    <ClCompile Include="nsafx.cpp">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="maintextview.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="dimensions.cpp">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mainwindow.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClInclude>
+    <ClInclude Include="nsafx.h">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClInclude>
+    <ClInclude Include="dimensions.h">
+      <Filter>Source Files\Constants &amp; Dimensions</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="maintextview.h">
+      <Filter>Source Files\Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
