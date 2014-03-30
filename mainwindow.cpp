@@ -2,10 +2,17 @@
 #include "mainwindow.h"
 
 MainWindow::MainWindow()
+	:	m_alignment(Gtk::ALIGN_CENTER, Gtk::ALIGN_CENTER),
+		m_table(2, 3, true),
+		m_control_w(Gtk::Stock::GO_UP),
+		m_control_a(Gtk::Stock::GO_BACK),
+		m_control_s(Gtk::Stock::GO_DOWN),
+		m_control_d(Gtk::Stock::GO_FORWARD)
 {
 	// Set up the cosmetics.
 	set_size_request(MAIN_WINDOW_HEIGHT * PHI, MAIN_WINDOW_HEIGHT);
 	set_border_width(5);
+
 
 	// Set up menus
 	m_refActionGroup = Gtk::ActionGroup::create();
@@ -55,6 +62,7 @@ MainWindow::MainWindow()
 	{
 		std::cerr << "building menus failed: " <<  ex.what();
 	}
+
 
 	// Set up window
 	/*	Vertical Stacker
@@ -114,6 +122,20 @@ MainWindow::MainWindow()
 			m_frame_controlbuttons.show();
 			//----------------------------------------------------------------
 		m_boxH0.show();
+		//--------------------------------------------------------------------
+		/*	Controls Table
+		====================================================================*/
+		m_boxV0.pack_start(m_alignment, Gtk::PACK_SHRINK);
+			m_alignment.add(m_table);
+				m_table.attach(m_control_q, 0, 1, 0, 1);
+				m_table.attach(m_control_w, 1, 2, 0, 1);
+				m_table.attach(m_control_e, 2, 3, 0, 1);
+				m_table.attach(m_control_a, 0, 1, 1, 2);
+				m_table.attach(m_control_s, 1, 2, 1, 2);
+				m_table.attach(m_control_d, 2, 3, 1, 2);
+			m_table.show();
+			m_table.show_all_children();
+		m_alignment.show();
 		//--------------------------------------------------------------------
 	m_boxV0.show();
 	//------------------------------------------------------------------------

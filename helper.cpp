@@ -30,7 +30,7 @@ void CurrentTime(char *buff, int buffsize)
 	time (&t);
 	localtime_s (&time_i, &t);
 
-	strftime(now, 32, "%y.%m.%d-%H:%M", &time_i);
+	strftime(now, 32, "%y.%m.%d-%H:%M ", &time_i);
 
 	strcpy_s(buff, buffsize, now);
 }

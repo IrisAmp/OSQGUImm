@@ -33,12 +33,18 @@ private:
 	Gtk::ToggleButton m_button0, m_button1;
 	Gtk::HSeparator m_separator;
 	Gtk::Frame m_frame_textview, m_frame_controlbuttons;
+	Gtk::Alignment m_alignment;
+
+	Gtk::Table m_table;
+	Gtk::Button m_control_w, m_control_a,
+	            m_control_s, m_control_d,
+	            m_control_q, m_control_e;
 
 	MainTextView m_textview;
 
 	// Menus
 	Glib::RefPtr<Gtk::UIManager> m_refUIManager;
-	Glib::RefPtr<Gtk::ActionGroup> m_refActionGroup;
+	Glib::RefPtr<Gtk::ActionGroup> m_refActionGroup, m_refControlGroup;
 	Glib::RefPtr<Gtk::CheckMenuItem> m_refSafe, m_refSticky;
 };
 

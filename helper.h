@@ -1,3 +1,7 @@
+/*----------------------------------------------------------------------------
+		Helper
+	Defines helper functions for the application.
+----------------------------------------------------------------------------*/
 #ifndef __OSQGUIMM_HELPER_H_DEFINED__
 #define __OSQGUIMM_HELPER_H_DEFINED__
 
